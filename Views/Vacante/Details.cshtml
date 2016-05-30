@@ -1,0 +1,76 @@
+﻿@model AgentieTorism.Models.Vacante
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Vacante</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Tara)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tara)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Destinatia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Destinatia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Duratasejur)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Duratasejur)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.transport)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.transport)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pachet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pachet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.plecare)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.plecare)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.locuridisponible)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.locuridisponible)
+        </dd>
+
+       
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.VacanteiD }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,90 @@
+﻿@model AgentieTorism.Models.Vacante
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Vacante</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Tara, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Tara)
+                @Html.ValidationMessageFor(model => model.Tara)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Destinatia, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Destinatia)
+                @Html.ValidationMessageFor(model => model.Destinatia)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Duratasejur, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Duratasejur)
+                @Html.ValidationMessageFor(model => model.Duratasejur)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.transport, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.transport)
+                @Html.ValidationMessageFor(model => model.transport)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.pachet, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.pachet)
+                @Html.ValidationMessageFor(model => model.pachet)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.plecare, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.plecare)
+                @Html.ValidationMessageFor(model => model.plecare)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.locuridisponible, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.locuridisponible)
+                @Html.ValidationMessageFor(model => model.locuridisponible)
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

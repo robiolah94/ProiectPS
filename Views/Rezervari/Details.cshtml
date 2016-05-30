@@ -1,0 +1,42 @@
+﻿@model AgentieTorism.Models.Rezervari
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Rezervari</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.vacante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vacante)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.data)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nrpersoane)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nrpersoane)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RezervareiD }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
